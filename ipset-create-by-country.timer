@@ -1,0 +1,11 @@
+# by itbn
+
+[Unit]
+Requires=ipset-create-by-country.service
+
+[Timer]
+Unit=ipset-create-by-country.service
+OnCalendar=Daily
+
+[Install]
+WantedBy=timers.target

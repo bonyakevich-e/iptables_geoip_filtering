@@ -1,0 +1,10 @@
+# This service is using for creating ipset rules by countries
+# By itbn
+
+[Unit]
+Description=Create ipset rules by countries
+Wants=ipset-create-by-country.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/scripts/ipset-create-by-country.bash ru
