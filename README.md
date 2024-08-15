@@ -48,9 +48,7 @@ Edit ipset-create-by-country.service line "ExecStart" if you need to change coun
 Edit ipset-create-by-country.timer line "OnCalendar" if you need to change time period (default 'Weekly') 
 ```
 cp ipset-create-by-country.service /etc/systemd/system
-```
-
 cp ipset-create-by-country.timer /etc/systemd/system 
-
 systemctl daemon-reload
+```
 
